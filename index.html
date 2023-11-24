@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>ManyBooks</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="images/library-logo.png" alt="Logo" class="logo-img"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="categories.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Categories</a>
+                <ul class="dropdown-menu" id="category-select">
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cart.html">Cart</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+        </nav>
+
+<!--SlideShow-->
+<div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active c-item">
+        <img src="images/slideshow-1.jpg" class="d-block w-100 c-img" alt="...">
+      </div>
+      <div class="overlay-text">
+        <h2>Online Library Management System</h2>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="images/slideshow-2.jpg" class="d-block w-100 c-img" alt="...">
+      </div>
+      <div class="overlay-text">
+        <h2>Online Library Management System</h2>
+      </div>
+      <div class="carousel-item c-item"> 
+        <img src="images/slideshow-3.jpg" class="d-block w-100 c-img" alt="...">
+      </div>
+      <div class="overlay-text">
+        <h2>Online Library Management System</h2>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!--Display category in menu-->
+  <div class="book-container" id="bookContainer"></div>
+
+  <!--Books for cart-->
+  <div class="container mt-5">
+    <div class="row" id="bookList"></div>
+  </div>
+
+  <!--Footer Section from here-->
+<footer>
+  <div class="main-footer-div">
+      <div class="footer-1">
+              <a href="index.html">Home</a>
+              <a href="categories.html">Categories</a>
+              <a href="cart.html">Cart</a>
+              <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-2">
+              <a href="#">Suport</a>
+              <a href="#">FAQ</a>
+              <a href="#">Returns</a>
+              <a href="#">Warranty</a>
+      </div>
+      <div class="footer-3">
+          <a href="https://www.facebook.com">Facebook</a>
+          <a href="https://www.instagram.com">Instagram</a>
+          <a href="https://www.twitter.com">Twitter</a>
+          <a href="https://www.web.whatsapp.com">Whatsapp</a>
+      </div>
+  </div>
+
+  <div class="last-div">
+      <p style="color: black">© ManyBooks Library 2023</p>
+
+      <div class="footer-links">
+          <a href="https://www.facebook.com"><i class="fab fa-facebook" style="color: black;"></i></a>
+          <a href="https://www.instagram.com"><i class="fab fa-instagram" style="color: black;"></i></a>
+          <a href="https://www.twitter.com"><i class="fab fa-twitter" style="color: black;"></i></a>
+          <a href="https://www.web.whatsapp.com"><i class="fab fa-whatsapp" style="color: black;"></i></a>
+      </div>
+  </div>
+</footer>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

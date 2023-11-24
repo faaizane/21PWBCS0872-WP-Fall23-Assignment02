@@ -1,0 +1,234 @@
+.navbar {
+  background-color: #80C0C6;
+}
+
+.logo-img {
+  width: 200px;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+.overlay-text h2 {
+  font-family: "Young Serif", serif;
+  font-size: 3em;
+  margin: 0;
+}
+
+.c-item {
+  height: 650px;
+  font-size: 18px;
+}
+@media only screen and (max-width: 768px) {
+  .c-item {
+    height: auto;
+  }
+}
+.c-item .c-img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.cart-div .btn-primary {
+  background-color: #304C89;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: transform 0.4s;
+  margin-top: 10px;
+}
+.cart-div .btn-primary:hover {
+  background-color: #648DE5;
+  color: #000100;
+}
+.cart-div .btn-primary:active {
+  background-color: #304C89 !important;
+}
+
+.card-css .card {
+  margin-bottom: 20px;
+  border: none;
+}
+.card-css .card .btn-primary {
+  width: 120px;
+  background-color: #304C89;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: transform 0.4s;
+  margin-top: 10px;
+}
+.card-css .card .btn-primary:hover {
+  background-color: #648DE5;
+  color: #000100;
+}
+.card-css .card .btn-primary:active {
+  background-color: #304C89 !important;
+}
+.card-css .card-img-top {
+  border-radius: 40px;
+  padding: 20px;
+}
+
+.total-div .receipt {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px 0;
+}
+.total-div .grand-total {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.contact-form {
+  height: 650px;
+  display: flex;
+  flex-direction: row;
+  background-color: #6ba292;
+}
+.contact-form .form-div {
+  text-align: center;
+  background-color: #FFFFFF;
+  width: 50%;
+  margin: 10px;
+  padding: 100px 0px 0px 25px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.contact-form .form-div h1 {
+  color: black;
+  font-family: "Young Serif", serif;
+}
+.contact-form .form-div form {
+  text-align: left;
+}
+.contact-form .form-div form label {
+  display: block;
+  margin-top: 10px;
+}
+.contact-form .form-div form input, .contact-form .form-div form textarea {
+  width: 90%;
+  padding: 10px;
+  border: 2px solid #6ba292;
+  margin: 5px 0;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  color: black;
+}
+.contact-form .form-div form .btn-contact {
+  color: white;
+  background-color: #304C89;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: transform 0.4s;
+  margin-top: 10px;
+}
+.contact-form .form-div form .btn-contact:hover {
+  background-color: #648DE5;
+  color: #000100;
+}
+.contact-form .form-div form .btn-contact:active {
+  background-color: #304C89 !important;
+}
+.contact-form .contact-div {
+  width: 50%;
+  background-color: #6ba292;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  overflow: hidden;
+}
+.contact-form .contact-div p {
+  width: 60%;
+}
+.contact-form .contact-div h1 {
+  font-family: "Young Serif", serif;
+}
+.contact-form .contact-div .contact-details {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.contact-form .contact-div .contact-details .ph-div, .contact-form .contact-div .contact-details .email-div {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+}
+
+.main-footer-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #80C0C6;
+  height: 200px;
+}
+
+.footer-1 {
+  width: 25%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.footer-1 a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.footer-2 {
+  width: 25%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.footer-2 a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.footer-3 {
+  width: 25%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.footer-3 a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.last-div {
+  background-color: #80C0C6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 100px 50px 100px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 30px;
+}/*# sourceMappingURL=styles.css.map */

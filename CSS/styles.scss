@@ -1,0 +1,198 @@
+$main-color:#80C0C6;
+$button-color: #304C89;
+$hover-color: #648DE5;
+$contact-color: #6ba292;
+
+.navbar{
+	background-color: $main-color;
+}
+.logo-img{
+	width: 200px;
+}
+
+@mixin button-styles{
+	background-color: $button-color;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	transition: transform 0.4s;
+	margin-top: 10px;
+	&:hover{
+		background-color: $hover-color;
+		color: #000100;
+	}
+	&:active{
+		background-color: $button-color !important;
+	}
+}
+
+//Slide Show
+ // Carousle 
+.overlay-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	text-align: center;
+}
+.overlay-text h2 {
+	font-family: 'Young Serif', serif;
+	font-size: 3em;
+	margin: 0;
+}
+.c-item{
+	height: 650px;
+	font-size: 18px;
+	@media only screen and (max-width: 768px){
+	height: auto;
+}
+	.c-img{
+		height: 100%;
+		object-fit: cover;
+		filter: brightness(0.6)
+	}
+}
+
+  //sccs for cart
+.cart-div{
+	.btn-primary{
+		@include button-styles();
+	}
+}
+
+//Sccs for home display items
+.card-css{
+	.card {
+		margin-bottom: 20px;
+		border: none;
+		.btn-primary{
+			width: 120px;
+			@include button-styles();
+		}
+	}
+	.card-img-top{
+		border-radius: 40px;
+		padding: 20px;
+		}
+}
+
+//Payment Page
+.total-div{
+	.receipt {
+		border: 1px solid #ccc;
+		padding: 20px;
+		margin: 20px 0;
+	}
+
+	.grand-total {
+		margin-top: 20px;
+		text-align: right;
+	}
+}
+
+//Contact Form
+.contact-form{
+	height: 650px; 
+	display: flex; 
+	flex-direction: row; 
+	background-color: $contact-color;
+	.form-div{
+		text-align: center; background-color: #FFFFFF; width: 50%; margin: 10px; padding: 100px 0px 0px 25px; align-items: center; 
+        justify-content: center; overflow: hidden;
+		h1{
+			color: black; font-family: 'Young Serif', serif;
+		}
+		form{
+			text-align: left;
+			label{
+				display: block; margin-top: 10px;
+			}
+			input, textarea{
+				width: 90%; padding: 10px; border: 2px solid $contact-color;
+                margin: 5px 0; border-radius: 5px; background-color: #FFFFFF; color: black;
+			}
+			.btn-contact{
+				color: white;
+				@include button-styles();
+			}
+		}
+	}
+	.contact-div{
+		width: 50%; background-color: $contact-color; justify-content: center; align-items: center; display: flex; 
+        flex-direction: column; margin: 10px; overflow: hidden;
+		p{
+			width: 60%;
+		}
+		h1{
+			font-family: 'Young Serif', serif;
+		}
+		.contact-details{
+			display: flex; flex-direction: column ; flex-wrap: wrap;
+			.ph-div, .email-div{
+				display: flex; flex-direction: row; gap: 30px; align-items: center; 
+			}
+		}
+	}
+}
+
+//footer div
+.main-footer-div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	background-color: $main-color;
+	height: 200px;
+}
+.footer-1 {
+	width: 25%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	a {
+		text-decoration: none;
+		color: black;
+		font-size: 18px;
+	}
+}
+.footer-2 {
+	width: 25%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	a {
+		text-decoration: none;
+		color: black;
+		font-size: 18px;
+	}
+}
+.footer-3 {
+	width: 25%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	a {
+		text-decoration: none;
+		color: black;
+		font-size: 18px;
+	}
+}
+.last-div {
+	background-color: $main-color;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 100px 50px 100px;
+}
+.footer-links {
+	display: flex;
+	gap: 30px;
+}

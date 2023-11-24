@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="Images/cafe_logo_2.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+    <title>Contact Us</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="images/library-logo.png" alt="Logo" class="logo-img"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="categories.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Categories</a>
+                <ul class="dropdown-menu" id="category-select">
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cart.html">Cart</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+        </nav>
+
+        <!--Contact Form-->
+        <div class="contact-form"> <!--This the main div-->
+            <!-- Form Div Start -->
+        <div class="form-div">
+        <h1>Have Questions? Let's Talk</h1>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name"/>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email"/>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn-contact">Submit</button>
+            </form>
+        </div>
+            <!-- Form Div End -->
+        <div class="contact-div"> <!--This div contains all the details of contact us-->
+            <H1>Contact Us</H1>
+            <p>For inquiries, suggestions, or support, you can contact us at the following email address and phone number. 
+                look forward to 
+                hearing from you.</p>
+                <!--This div contains both email and ph num-->
+            <div class="contact-details"> 
+            <!--This div is for ph num-->
+                <div class="ph-div"> 
+                    <div>
+                        <i class="fa-solid fa-phone fa-2xl"></i>
+                    </div>
+                    <div>
+                        <h2>Call Us Anytime <br><span style="color: #F1F7ED;">03xxxxxxxx</span></h2>
+                    </div>
+                </div>
+                <!--This div is for email-->
+                <div class="email-div"> 
+                    <div>
+                        <i class="fa-solid fa-envelope fa-2xl"></i>
+                    </div>
+                    <div>
+                        <h2>Send Us An Email<br><span style="color: #F1F7ED;">contact@gmail.com</span></h2>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div> 
+        <!--End of the main div-->
+
+                <!--Div for footer-->
+                <footer>
+                    <div class="main-footer-div">
+                        <div class="footer-1">
+                                <a href="index.html">Home</a>
+                                <a href="categories.html">Categories</a>
+                                <a href="cart.html">Cart</a>
+                                <a href="contact.html">Contact</a>
+                        </div>
+                        <div class="footer-2">
+                                <a href="#">Suport</a>
+                                <a href="#">FAQ</a>
+                                <a href="#">Returns</a>
+                                <a href="#">Warranty</a>
+                        </div>
+                        <div class="footer-3">
+                            <a href="https://www.facebook.com">Facebook</a>
+                            <a href="https://www.instagram.com">Instagram</a>
+                            <a href="https://www.twitter.com">Twitter</a>
+                            <a href="https://www.web.whatsapp.com">Whatsapp</a>
+                        </div>
+                    </div>
+                    <div class="last-div">
+                        <p style="color: black">© ManyBooks Library 2023</p>
+                        <div class="footer-links">
+                            <a href="https://www.facebook.com"><i class="fab fa-facebook" style="color: black;"></i></a>
+                            <a href="https://www.instagram.com"><i class="fab fa-instagram" style="color: black;"></i></a>
+                            <a href="https://www.twitter.com"><i class="fab fa-twitter" style="color: black;"></i></a>
+                            <a href="https://www.web.whatsapp.com"><i class="fab fa-whatsapp" style="color: black;"></i></a>
+                        </div>
+                    </div>
+                </footer>
+        
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
